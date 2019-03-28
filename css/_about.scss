@@ -1,3 +1,21 @@
-div {
-  background: white;
+
+.square {
+  background: yellow;
+  width: 200px;
+  height: 200px;
+
+  @media #{$desktop1920} {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media #{$tablet} {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media #{$mobile} {
+    width: 50px;
+    height: 50px;
+  }
 }

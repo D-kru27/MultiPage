@@ -1,20 +1,153 @@
-.square {
-  background: green;
-  width: 200px;
-  height: 200px;
 
-  @media #{$desktop1920} {
-    width: 200px;
-    height: 200px;
+html, body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: #222222;
+}
+
+//.layout-positioner {
+//  border: 2px dashed #3498db;
+//  width: 1000px;
+//  margin: auto;
+//}
+header {
+  color: #fff;
+  width: 100%;
+}
+
+.nav_panel {
+  @extend %fsb;
+  padding: 0 30px;
+  height: 80px;
+
+  &__child {
+
+    .logo {
+      height: 50px;
+      width: auto;
+    }
   }
 
-  @media #{$tablet} {
-    width: 100px;
-    height: 100px;
+  &__child:first-child {
+    margin-right: 30px;
+    @extend %fcc;
   }
 
-  @media #{$mobile} {
-    width: 50px;
-    height: 50px;
+  .navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @extend %fc;
+    justify-content: flex-start;
+
+    li {
+      margin-right: 30px;
+
+      a {
+        text-decoration: none;
+        display: block;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .width_block{
+    width: 500px;
+  }
+
+  &__child:last-child {
+    @extend %fc;
+
+    a {
+      display: block;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .button_open{
+      text-decoration: none;
+      border: 1px solid white;
+      border-radius: 25px;
+      padding: 5px 10px;
+      font{
+        size:10px;
+      }
+    }
   }
 }
+
+  //.social-tw {
+  //  background: url("../img/svg-instagram-logo-icon-1.svg") no-repeat;
+  //}
+
+
+//.burger {
+//  cursor: pointer;
+//  z-index: 3;
+//}
+//
+//.burger span {
+//  position: relative;
+//  display: block;
+//  width: 30px;
+//  height: 5px;
+//  border-radius: 2px;
+//  background: #222;
+//  transition: all 0.2s ease-in-out;
+//}
+//.burger span:before, .burger span:after {
+//  position: absolute;
+//  background: #222;
+//  content: "";
+//  width: 30px;
+//  height: 5px;
+//  border-radius: 1px;
+//  transition: all 0.2s ease-in-out;
+//}
+//.burger span:before {
+//  top: -10px;
+//}
+//.burger span:after {
+//  top: 10px;
+//}
+//.burger.active span {
+//  background: transparent;
+//}
+//.burger.active span:before {
+//  transform: rotate(45deg) translate(7px, 7px);
+//}
+//.burger.active span:after {
+//  transform: rotate(-45deg) translate(7px, -7px);
+//}
+
+//.mobile-menu
+//{
+//  position: fixed;
+//  width: 100vw;
+//  top:-250px;
+//  left: 0;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: space-around;
+//  align-items: center;
+//  background: #ededed;
+//  list-style-type: none;
+//  -webkit-font-smoothing: antialiased;
+//  transition: 0.5s ease-in-out;
+//}
+//
+//.mobile-menu.active{
+//  top: 0;
+//  transition: 0.5s ease-in-out;
+//}
+//
+//.mobile-menu a
+//{
+//  padding: 10px 0;
+//  font-size: 22px;
+//  text-decoration: none;
+//  color: #232323;
+//  transition: color 0.3s ease;
+//}

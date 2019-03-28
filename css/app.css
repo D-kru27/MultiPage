@@ -1,27 +1,76 @@
-.square {
-  background: green;
-  width: 200px;
-  height: 200px;
-}
-@media only screen and (width: 1920px) {
-  .square {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .square {
-    width: 100px;
-    height: 100px;
-  }
-}
-@media (max-width: 768px) {
-  .square {
-    width: 50px;
-    height: 50px;
-  }
-}
+.nav_panel .navigation, .nav_panel__child:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-div {
-  background: white;
-}
+.nav_panel__child:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.nav_panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+html, body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: #222222; }
+
+header {
+  color: #fff;
+  width: 100%; }
+
+.nav_panel {
+  padding: 0 30px;
+  height: 80px; }
+  .nav_panel__child .logo {
+    height: 50px;
+    width: auto; }
+  .nav_panel__child:first-child {
+    margin-right: 30px; }
+  .nav_panel .navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start; }
+    .nav_panel .navigation li {
+      margin-right: 30px; }
+      .nav_panel .navigation li a {
+        text-decoration: none;
+        display: block;
+        color: #ffffff; }
+  .nav_panel .width_block {
+    width: 500px; }
+  .nav_panel__child:last-child a {
+    display: block;
+    color: white;
+    margin-right: 10px; }
+  .nav_panel__child:last-child .button_open {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 5px 10px; }
+    .nav_panel__child:last-child .button_open font {
+      size: 10px; }
+
+.square {
+  background: yellow;
+  width: 200px;
+  height: 200px; }
+  @media only screen and (width: 1920px) {
+    .square {
+      width: 200px;
+      height: 200px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .square {
+      width: 100px;
+      height: 100px; } }
+  @media (max-width: 768px) {
+    .square {
+      width: 50px;
+      height: 50px; } }
