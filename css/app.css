@@ -3,13 +3,13 @@
   justify-content: center;
   align-items: center; }
 
-.nav_panel__child:first-child {
+.nav_panel__child:first-child, .main_section, .main__upper, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
 
-.nav_panel {
+.main__upper .button_wrapper, .footer_upper, .footer_bottom {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -19,13 +19,15 @@ html, body {
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
-  background: #222222; }
+  background: #222222;
+  color: white; }
 
 header {
   color: #fff;
   width: 100%; }
 
 .nav_panel {
+  display: flex;
   padding: 0 30px;
   height: 80px; }
   .nav_panel__child .logo {
@@ -44,8 +46,6 @@ header {
         text-decoration: none;
         display: block;
         color: #ffffff; }
-  .nav_panel .width_block {
-    width: 500px; }
   .nav_panel__child:last-child a {
     display: block;
     color: white;
@@ -54,9 +54,169 @@ header {
     text-decoration: none;
     border: 1px solid white;
     border-radius: 25px;
-    padding: 5px 10px; }
+    padding: 7px 15px; }
     .nav_panel__child:last-child .button_open font {
       size: 10px; }
+  .nav_panel .share {
+    margin-left: auto; }
+
+.main_section {
+  width: 100%; }
+
+.main__upper {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin-top: 50px; }
+  .main__upper h1 {
+    line-height: 44px; }
+    .main__upper h1 font {
+      size: 60px;
+      weight: 700; }
+  .main__upper p {
+    color: #a5a5a7;
+    line-height: 24px;
+    margin-top: 12px;
+    max-width: 720px;
+    text-align: center; }
+    .main__upper p font {
+      size: 24px;
+      weight: 400; }
+  .main__upper .button_wrapper {
+    width: 540px; }
+  .main__upper .button {
+    display: block;
+    box-sizing: border-box;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #18191c;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px; }
+    .main__upper .button font {
+      size: 10px; }
+  .main__upper .open_accord {
+    background-color: #7289DA;
+    color: white; }
+
+.main__bottom {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background: url("../img/elements/elements.png") no-repeat; }
+  .main__bottom img {
+    position: absolute; }
+
+.question {
+  left: 415px;
+  top: 90px; }
+
+.monitor_big {
+  left: 380px;
+  top: 160px; }
+
+.laptop {
+  left: 665px;
+  top: 280px; }
+
+.mob1 {
+  top: 375px;
+  left: 260px; }
+
+.mob2 {
+  top: 380px;
+  left: 105px; }
+
+.mixture {
+  top: 425px;
+  left: 50px; }
+
+.joystick {
+  top: 520px;
+  left: 410px; }
+
+.earphones {
+  top: 258px;
+  right: 225px; }
+
+.coin_left {
+  top: 258px;
+  left: 200px; }
+
+.coin_right {
+  top: 40px;
+  right: 520px; }
+
+.bomb {
+  top: 235px;
+  left: 150px;
+  animation: up_down 1.5s infinite alternate ease-in-out;
+  animation-delay: .4s; }
+
+.coin_left, .coin_right {
+  animation: up_down 1.5s infinite alternate ease-in-out; }
+
+@keyframes up_down {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(10px); } }
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 40px; }
+
+.footer_upper {
+  width: 1020px;
+  box-sizing: border-box;
+  margin: 150px auto 40px; }
+
+.footer_upper_child {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  flex-direction: column; }
+  .footer_upper_child a {
+    color: #909092;
+    text-decoration: none; }
+  .footer_upper_child p {
+    color: white; }
+  .footer_upper_child .minilogo {
+    width: 36px;
+    height: 36px;
+    margin-top: 20px; }
+
+.footer_bottom {
+  width: 1020px;
+  padding-top: 30px;
+  border-top: 1px solid #909092; }
+
+.footer_bottom_text h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 0;
+  outline: 0;
+  padding: 0; }
+.footer_bottom_text h3 {
+  color: #909092;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: 1.15; }
+
+.button_registration {
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 15px;
+  padding: 16px;
+  background-color: #7289DA;
+  color: white; }
+  .button_registration font {
+    size: 15px; }
 
 .square {
   background: yellow;

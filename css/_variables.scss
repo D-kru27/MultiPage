@@ -44,3 +44,9 @@ $noDesktop: '(max-width: 1024px)';
   align-items: center;
   flex-direction: column;
 }
+
+%fsa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
