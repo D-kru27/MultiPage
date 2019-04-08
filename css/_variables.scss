@@ -50,3 +50,9 @@ $noDesktop: '(max-width: 1024px)';
   justify-content: space-around;
   align-items: center;
 }
+
+%fc-s {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

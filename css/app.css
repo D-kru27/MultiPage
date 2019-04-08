@@ -1,18 +1,28 @@
-.nav_panel .navigation, .nav_panel__child:last-child {
+.nav_panel .navigation, .nav_panel__child:last-child, .what_for_section, .who_we_are, .how_many, .investors, .investors_name_child, .investors_name_child a {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.nav_panel__child:first-child, .main_section, .main__upper, footer {
+.nav_panel__child:first-child, .main_section, .main__upper, footer, .what_for_wrapper .what_for_text, .who_we_are_wrapper, .who_we_are_text, .how_many_wrapper, .how_many_text, .statistic_child, .reviews, .reviews_wrapper, .reviews_text, .joinAccord_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
 
-.main__upper .button_wrapper, .footer_upper, .footer_bottom {
+.main__upper .button_wrapper, .footer_upper, .footer_bottom, .what_for_wrapper, .feedback {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+.how_many_statistic {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.quotes, .investors_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
 
 html, body {
   box-sizing: border-box;
@@ -218,19 +228,340 @@ footer {
   .button_registration font {
     size: 15px; }
 
-.square {
-  background: yellow;
-  width: 200px;
-  height: 200px; }
-  @media only screen and (width: 1920px) {
-    .square {
-      width: 200px;
-      height: 200px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .square {
-      width: 100px;
-      height: 100px; } }
-  @media (max-width: 768px) {
-    .square {
-      width: 50px;
-      height: 50px; } }
+html, body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: #222222;
+  color: white; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.13; }
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.13; }
+
+h3 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #4F545C;
+  line-height: 1.1;
+  margin-bottom: 0; }
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4F545C;
+  line-height: 1.1;
+  margin-bottom: 0; }
+
+p {
+  color: #a5a5a7;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3; }
+
+header {
+  color: #fff;
+  width: 100%; }
+
+.nav_panel {
+  display: flex;
+  padding: 0 30px;
+  height: 80px; }
+  .nav_panel__child .logo {
+    height: 50px;
+    width: auto; }
+  .nav_panel__child:first-child {
+    margin-right: 30px; }
+  .nav_panel .navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start; }
+    .nav_panel .navigation li {
+      margin-right: 30px; }
+      .nav_panel .navigation li a {
+        text-decoration: none;
+        display: block;
+        color: #ffffff; }
+  .nav_panel__child:last-child a {
+    display: block;
+    color: white;
+    margin-right: 10px; }
+  .nav_panel__child:last-child .button_open {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 7px 15px; }
+    .nav_panel__child:last-child .button_open font {
+      size: 10px; }
+  .nav_panel .share {
+    margin-left: auto; }
+
+.what_for_section {
+  width: 100%;
+  background: #202225;
+  margin: 200px 0 100px; }
+
+.what_for_wrapper {
+  width: 1020px; }
+  .what_for_wrapper .what_for_text {
+    max-width: 440px; }
+  .what_for_wrapper .what_for_text {
+    margin-left: 55px; }
+  .what_for_wrapper img {
+    animation: up_down 4s infinite alternate ease-in-out; }
+@keyframes up_down {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(20px); } }
+.who_we_are {
+  width: auto;
+  margin-bottom: 100px; }
+
+.who_we_are_text {
+  max-width: 755px;
+  text-align: center; }
+  .who_we_are_text p {
+    margin: 0; }
+
+.who_we_are img {
+  width: 115px;
+  height: 140px; }
+
+.how_many {
+  width: auto;
+  padding-bottom: 200px;
+  background: white; }
+
+.how_many_text {
+  text-align: center;
+  margin-bottom: 50px; }
+  .how_many_text h2 {
+    color: #4F545C; }
+  .how_many_text p {
+    margin: 0; }
+
+.how_many_statistic {
+  box-sizing: border-box;
+  width: 940px;
+  flex-wrap: wrap; }
+  .how_many_statistic p {
+    font-size: 18px;
+    margin-top: 0; }
+
+.who_we_are img {
+  width: 115px;
+  height: 140px; }
+
+.reviews {
+  width: auto;
+  padding-bottom: 200px;
+  background: linear-gradient(#e3e7f8, #7289da) 0 0 no-repeat;
+  background-size: contain, 100%; }
+
+.reviews_wrapper {
+  width: 100%;
+  background: linear-gradient(#fff, #fff) 0 0 no-repeat;
+  background-size: 100% 65%; }
+
+.reviews_text {
+  text-align: center;
+  margin-bottom: 50px; }
+  .reviews_text h2 {
+    color: #4F545C; }
+
+.feedback {
+  width: 1200px;
+  flex-wrap: wrap; }
+
+.feedback_child {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 450px;
+  box-sizing: border-box;
+  padding: 40px;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 9px 30px 0 rgba(35, 39, 42, 0.1); }
+  .feedback_child img {
+    border-radius: 50%;
+    height: 72px;
+    width: 72px; }
+  .feedback_child .user_name {
+    color: #AEB5BD; }
+  .feedback_child p {
+    font-weight: 300;
+    margin-top: 35px; }
+  .feedback_child a {
+    background: none;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    position: absolute; }
+    .feedback_child a img {
+      width: 26px;
+      height: 21px; }
+
+.leave_it_here {
+  align-self: flex-start; }
+  .leave_it_here h3 {
+    color: white;
+    margin: 50px 20px; }
+
+.quotes {
+  width: 100%; }
+
+.quotes_child {
+  width: 375px;
+  margin-right: 30px; }
+  .quotes_child p {
+    color: white; }
+  .quotes_child div {
+    margin-bottom: 20px; }
+
+.streamer p {
+  margin-bottom: 45px; }
+
+.investors {
+  width: 100%;
+  padding: 130px 0;
+  background: white; }
+
+.investors_wrapper {
+  width: 960px;
+  height: 500px;
+  flex-wrap: wrap;
+  box-sizing: border-box; }
+
+.investors_text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-basis: 35%; }
+  .investors_text h2 {
+    color: #4F545C;
+    font-weight: 300; }
+
+.investors_name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 65%;
+  flex-wrap: wrap;
+  background-color: white;
+  padding-left: 30px;
+  box-sizing: border-box; }
+
+.investors_name_child {
+  flex-basis: 20%;
+  height: 200px;
+  margin-bottom: 30px;
+  min-width: 175px;
+  padding: 0 10px;
+  box-shadow: 0 0 35px 5px rgba(35, 39, 42, 0.1); }
+  .investors_name_child a {
+    border-radius: 5px;
+    box-sizing: border-box; }
+
+.joinAccord {
+  width: 100%;
+  background: white; }
+
+.joinAccord_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; }
+
+.joinAccord_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%; }
+  .joinAccord_text h2 {
+    color: #4F545C;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.3; }
+
+.joinAccord_vacancies {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #7289DA;
+  border-radius: 3px;
+  padding: 15px; }
+  .joinAccord_vacancies a {
+    text-decoration: none;
+    color: white; }
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 40px; }
+
+.footer_upper {
+  width: 1020px;
+  box-sizing: border-box;
+  margin: 150px auto 40px; }
+
+.footer_upper_child {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  flex-direction: column; }
+  .footer_upper_child a {
+    color: #909092;
+    text-decoration: none; }
+  .footer_upper_child p {
+    color: white; }
+  .footer_upper_child .minilogo {
+    width: 36px;
+    height: 36px;
+    margin-top: 20px; }
+
+.footer_bottom {
+  width: 1020px;
+  padding-top: 30px;
+  border-top: 1px solid #909092; }
+
+.footer_bottom_text h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 0;
+  outline: 0;
+  padding: 0; }
+.footer_bottom_text h3 {
+  color: #909092;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: 1.15; }
+
+.button_registration {
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 15px;
+  padding: 16px;
+  background-color: #7289DA;
+  color: white; }
+  .button_registration font {
+    size: 15px; }
+
+/*# sourceMappingURL=app.css.map */
