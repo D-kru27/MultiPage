@@ -1,0 +1,82 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: url("/img/solntse_gory_ozero_pejzazh.jpg") no-repeat #222222;
+  //background: url("/img/olen_art_vektor_1600x1200.jpg") no-repeat #222222;
+  color: white;
+  position: relative;
+  height: 800px;
+  width: 100%;
+}
+
+p{
+  font: {
+    size: 12px;
+  }
+  text-Transform: uppercase;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.registration {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  width: 480px;
+  height: 460px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #36393F;
+  border-radius: 3px;
+}
+
+.registration_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+input {
+  box-sizing: border-box;
+  width: 400px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.fields {
+  margin-bottom: 25px;
+}
+
+#continue {
+  color: white;
+  background: #7289DA;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.already_registered {
+  align-self: flex-start;
+  margin-left: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: #7289DA;
+  font-size: 14px;
+}
