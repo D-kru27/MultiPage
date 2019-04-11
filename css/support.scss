@@ -1,0 +1,20 @@
+.header-support {
+  background: white;
+}
+
+.logo-black img {
+  max-height: 37px;
+}
+
+.header-support__wrapper {
+  @extend %fsb;
+  width: 85%;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.navigation-support a {
+  color: #7289DA;
+  text-decoration: none;
+  margin-right: 20px;
+}
