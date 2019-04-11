@@ -1,20 +1,159 @@
-.header-support {
+.support_wrapper {
   background: white;
+
+  .header {
+    background: white;
+
+    &_wrapper {
+      @extend %fsb;
+      width: 85%;
+      margin: 0 auto;
+      height: 70px;
+
+      .logo-container__img {
+        max-height: 37px;
+      }
+
+      .navigation__link {
+        color: #7289DA;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .help-center {
+    @extend %fc;
+    background: url("/img/fon-support.png") no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+
+    &_wrapper {
+      box-sizing: border-box;
+      max-width: 70%;
+      @extend %fcc;
+
+      .search-form {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+        background: white;
+
+        input, button {
+          border: none;
+          outline: none;
+          background: transparent;
+        }
+
+        input {
+          width: 100%;
+          height: 62px;
+          padding-left: 15px;
+          font-size: 14px;
+        }
+
+        button {
+          height: 30px;
+          width: 30px;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          cursor: pointer;
+          //background: url("/img/icons-search.png");
+        }
+
+        button:before {
+          content: "\f002";
+          font-size: 18px;
+          color: grey;
+        }
+      }
+    }
+  }
+
+  .need-help {
+    @extend %fcc;
+    margin-top: 100px;
+    margin-bottom: 115px;
+    width: 100%;
+    color: #4F545C;
+  }
+
+  .blocks {
+    @extend %fc;
+    flex-flow: row wrap;
+    padding: 0 120px;
+
+    &__link {
+      box-sizing: border-box;
+      text-decoration: none;
+      width: 240px;
+      height: 260px;
+      margin-right: 25px;
+      margin-bottom: 25px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0px 9px 30px rgba(200, 200, 200, 0.30);
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      width: 200px;
+      margin: -10px auto 0;
+      color: #68727e;
+    }
+
+    hr {
+      height: 1px;
+      border: none;
+      background-color: #99aab5;
+      opacity: .5;
+      width: 50px;
+      margin: -6px auto 20px;
+    }
+  }
+
+  .blocks__child img {
+    width: 106px;
+    height: auto;
+  }
+
+  .tweet-us {
+    color: #4F545C;
+    text-align: center;
+    margin-top: 120px;
+
+    a {
+      text-decoration: none;
+    }
+
+    .twitter-btn {
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 8px 4px 8px 28px;
+      color: white;
+      background-color: #55acee;
+      width: 136px;
+      margin: 0 auto;
+      border-radius: 3px;
+      position: relative;
+    }
+
+    .twitter-btn:before {
+      background: url(/img/twitter-white.png);
+      background-size: 16px;
+      margin-right: 24px;
+      width: 16px;
+      height: 16px;
+      content: "";
+      position: absolute;
+      left: 14px;
+      top: 11px;
+    }
+  }
 }
 
-.logo-black img {
-  max-height: 37px;
-}
-
-.header-support__wrapper {
-  @extend %fsb;
-  width: 85%;
-  margin: 0 auto;
-  height: 70px;
-}
-
-.navigation-support a {
-  color: #7289DA;
-  text-decoration: none;
-  margin-right: 20px;
-}

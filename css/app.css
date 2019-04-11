@@ -1,15 +1,15 @@
-.index_wrapper .nav_panel .navigation, .index_wrapper .nav_panel__child:last-child, .about_wrapper .nav_panel .navigation, .about_wrapper .nav_panel__child:last-child, .about_wrapper .what_for_section, .about_wrapper .who_we_are, .about_wrapper .how_many, .about_wrapper .investors, .about_wrapper .investors_name_child, .about_wrapper .investors_name_child a {
+.index_wrapper .nav_panel .navigation, .index_wrapper .nav_panel__child:last-child, .about_wrapper .nav_panel .navigation, .about_wrapper .nav_panel__child:last-child, .about_wrapper .what_for_section, .about_wrapper .who_we_are, .about_wrapper .how_many, .about_wrapper .investors, .about_wrapper .investors_name_child, .about_wrapper .investors_name_child a, .support_wrapper .help-center, .support_wrapper .blocks {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.index_wrapper .nav_panel__child:first-child, .index_wrapper .main_section, .index_wrapper .main__upper, .index_wrapper footer, .about_wrapper .nav_panel__child:first-child, .about_wrapper .what_for_wrapper .what_for_text, .about_wrapper .who_we_are_wrapper, .about_wrapper .who_we_are_text, .about_wrapper .how_many_wrapper, .about_wrapper .how_many_text, .about_wrapper .statistic_child, .about_wrapper .reviews, .about_wrapper .reviews_wrapper, .about_wrapper .reviews_text, .about_wrapper .joinAccord_wrapper, .about_wrapper footer {
+.index_wrapper .nav_panel__child:first-child, .index_wrapper .main_section, .index_wrapper .main__upper, .index_wrapper footer, .about_wrapper .nav_panel__child:first-child, .about_wrapper .what_for_wrapper .what_for_text, .about_wrapper .who_we_are_wrapper, .about_wrapper .who_we_are_text, .about_wrapper .how_many_wrapper, .about_wrapper .how_many_text, .about_wrapper .statistic_child, .about_wrapper .reviews, .about_wrapper .reviews_wrapper, .about_wrapper .reviews_text, .about_wrapper .joinAccord_wrapper, .about_wrapper footer, .support_wrapper .help-center_wrapper, .support_wrapper .need-help {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
 
-.index_wrapper .main__upper .button_wrapper, .index_wrapper .footer_upper, .index_wrapper .footer_bottom, .about_wrapper .what_for_wrapper, .about_wrapper .feedback, .about_wrapper .footer_upper, .about_wrapper .footer_bottom, .header-support__wrapper {
+.index_wrapper .main__upper .button_wrapper, .index_wrapper .footer_upper, .index_wrapper .footer_bottom, .about_wrapper .what_for_wrapper, .about_wrapper .feedback, .about_wrapper .footer_upper, .about_wrapper .footer_bottom, .support_wrapper .header_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -35,6 +35,11 @@ html, body {
 header {
   color: #fff;
   width: 100%; }
+
+h4 {
+  color: #899CE0;
+  font-size: 18px;
+  font-weight: 500; }
 
 .index_wrapper .nav_panel {
   display: flex;
@@ -561,20 +566,114 @@ header {
   color: #7289DA;
   font-size: 14px; }
 
-.header-support {
+.support_wrapper {
   background: white; }
-
-.logo-black img {
-  max-height: 37px; }
-
-.header-support__wrapper {
-  width: 85%;
-  margin: 0 auto;
-  height: 70px; }
-
-.navigation-support a {
-  color: #7289DA;
-  text-decoration: none;
-  margin-right: 20px; }
+  .support_wrapper .header {
+    background: white; }
+    .support_wrapper .header_wrapper {
+      width: 85%;
+      margin: 0 auto;
+      height: 70px; }
+      .support_wrapper .header_wrapper .logo-container__img {
+        max-height: 37px; }
+      .support_wrapper .header_wrapper .navigation__link {
+        color: #7289DA;
+        text-decoration: none;
+        margin-right: 20px; }
+  .support_wrapper .help-center {
+    background: url("/img/fon-support.png") no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%; }
+    .support_wrapper .help-center_wrapper {
+      box-sizing: border-box;
+      max-width: 70%; }
+      .support_wrapper .help-center_wrapper .search-form {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+        background: white; }
+        .support_wrapper .help-center_wrapper .search-form input, .support_wrapper .help-center_wrapper .search-form button {
+          border: none;
+          outline: none;
+          background: transparent; }
+        .support_wrapper .help-center_wrapper .search-form input {
+          width: 100%;
+          height: 62px;
+          padding-left: 15px;
+          font-size: 14px; }
+        .support_wrapper .help-center_wrapper .search-form button {
+          height: 30px;
+          width: 30px;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          cursor: pointer; }
+        .support_wrapper .help-center_wrapper .search-form button:before {
+          content: "\f002";
+          font-size: 18px;
+          color: grey; }
+  .support_wrapper .need-help {
+    margin-top: 100px;
+    margin-bottom: 115px;
+    width: 100%;
+    color: #4F545C; }
+  .support_wrapper .blocks {
+    flex-flow: row wrap;
+    padding: 0 120px; }
+    .support_wrapper .blocks__link {
+      box-sizing: border-box;
+      text-decoration: none;
+      width: 240px;
+      height: 260px;
+      margin-right: 25px;
+      margin-bottom: 25px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0px 9px 30px rgba(200, 200, 200, 0.3); }
+    .support_wrapper .blocks p {
+      font-size: 14px;
+      font-weight: 400;
+      width: 200px;
+      margin: -10px auto 0;
+      color: #68727e; }
+    .support_wrapper .blocks hr {
+      height: 1px;
+      border: none;
+      background-color: #99aab5;
+      opacity: .5;
+      width: 50px;
+      margin: -6px auto 20px; }
+  .support_wrapper .blocks__child img {
+    width: 106px;
+    height: auto; }
+  .support_wrapper .tweet-us {
+    color: #4F545C;
+    text-align: center;
+    margin-top: 120px; }
+    .support_wrapper .tweet-us a {
+      text-decoration: none; }
+    .support_wrapper .tweet-us .twitter-btn {
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 8px 4px 8px 28px;
+      color: white;
+      background-color: #55acee;
+      width: 136px;
+      margin: 0 auto;
+      border-radius: 3px;
+      position: relative; }
+    .support_wrapper .tweet-us .twitter-btn:before {
+      background: url(/img/twitter-white.png);
+      background-size: 16px;
+      margin-right: 24px;
+      width: 16px;
+      height: 16px;
+      content: "";
+      position: absolute;
+      left: 14px;
+      top: 11px; }
 
 /*# sourceMappingURL=app.css.map */
