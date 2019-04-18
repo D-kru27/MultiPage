@@ -56,19 +56,14 @@
         }
 
         button {
-          height: 30px;
-          width: 30px;
+          height: 25px;
+          width: 25px;
           position: absolute;
-          top: 15px;
+          top: 20px;
           right: 15px;
           cursor: pointer;
-          //background: url("/img/icons-search.png");
-        }
-
-        button:before {
-          content: "\f002";
-          font-size: 18px;
-          color: grey;
+          background: url("/img/icons-search.png");
+          background-size: contain;
         }
       }
     }
@@ -155,5 +150,67 @@
       top: 11px;
     }
   }
+
+  .footer {
+    background: url("/img/fon-with-elements.png") repeat;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+    padding-top: 85px;
+
+    .footer-logo-container__img {
+      height: 35px;
+      width: auto;
+      position: absolute;
+      left: 30px;
+      top: 50%;
+    }
+  }
+
+  .footer_wrapper {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
+
+    &__upper_child {
+      @extend %fc;
+      box-sizing: border-box;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #4F545C;
+
+      a {
+        margin-right: 50px;
+
+        &:nth-child(2n) {
+          margin-left: 65px;
+        }
+      }
+    }
+
+
+    &__bottom {
+      @extend %fsa;
+      padding: 30px 120px 50px 0;
+      line-height: 1.5;
+
+      &_child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        & a {
+          text-decoration: none;
+          color: #7B7D80;
+        }
+      }
+    }
+
+
+  }
+
+
 }
 
