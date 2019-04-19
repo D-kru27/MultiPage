@@ -10,6 +10,12 @@
       margin: 0 auto;
       height: 70px;
 
+      @media #{$mobile480} {
+        text-align: center;
+        width: 255px;
+        line-height: 1.8;
+      }
+
       .logo-container__img {
         max-height: 37px;
       }
@@ -30,15 +36,21 @@
     padding: 0 20px;
     text-align: center;
     width: 100%;
+    box-sizing: border-box;
 
     &_wrapper {
       box-sizing: border-box;
       max-width: 70%;
       @extend %fcc;
 
+      h2 {
+        position: absolute;
+        top: 115px;
+      }
+
       .search-form {
-        position: relative;
-        width: 1000px;
+        position: absolute;
+        width: 75%;
         margin: 0 auto;
         background: white;
 
@@ -75,6 +87,14 @@
     margin-bottom: 115px;
     width: 100%;
     color: #4F545C;
+
+    @media #{$mobile} {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
   }
 
   .blocks {
@@ -170,7 +190,6 @@
 
   .footer_wrapper {
     width: 100%;
-    max-width: 1100px;
     position: relative;
     margin: 0 auto;
 
@@ -180,11 +199,27 @@
       padding-bottom: 20px;
       border-bottom: 1px solid #4F545C;
 
+      @media #{$mobile} {
+        flex-flow: row wrap;
+        padding: 0 50px 20px 65px;
+        justify-content: space-around;
+      }
+
+
       a {
         margin-right: 50px;
 
+        @media #{$mobile} {
+          margin-right: 30px;
+          margin-bottom: 10px;
+        }
+
         &:nth-child(2n) {
           margin-left: 65px;
+
+          @media #{$mobile545} {
+            margin-left: 20px;
+          }
         }
       }
     }
@@ -195,11 +230,25 @@
       padding: 30px 120px 50px 0;
       line-height: 1.5;
 
+      @media #{$mobile} {
+        padding-right: 0;
+      }
+
+      .footer-logo-container {
+        @media #{$mobile} {
+          display: none;
+        }
+      }
+
       &_child {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        @media #{$mobile320} {
+          font-size: smaller;
+        }
 
         & a {
           text-decoration: none;

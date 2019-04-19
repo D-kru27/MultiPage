@@ -1,15 +1,15 @@
 .registration_wrapper {
-  html, body {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
-    background: url("/img/solntse_gory_ozero_pejzazh.jpg") no-repeat #222222;
-    //background: url("/img/olen_art_vektor_1600x1200.jpg") no-repeat #222222;
-    color: white;
-    position: relative;
-    height: 800px;
-    width: 100%;
+  width: auto;
+  height: 900px;
+    background: url("/img/solntse_gory_ozero_pejzazh.jpg") no-repeat;
+    //background: url("/img/olen_art_vektor_1600x1200.jpg") no-repeat;
+
+  @media #{$mobile}  {
+    height: 680px;
+  }
+
+  @media #{$mobile545}  {
+    height: 0px;
   }
 
   p{
@@ -29,6 +29,10 @@
     position: absolute;
     top: 5%;
     left: 5%;
+
+    @media #{$mobile545}  {
+      display: none;
+    }
   }
 
   .registration {
@@ -41,6 +45,16 @@
     padding: 10px;
     background: #36393F;
     border-radius: 3px;
+
+    @media #{$tabletPortrait}, #{$mobile}  {
+      left: 20%;
+      top: 20%;
+    }
+    @media #{$mobile545}  { //работает на 544!
+     width: 100%;
+      height: auto;
+      position: inherit;
+    }
   }
 
   .registration_form {
@@ -57,6 +71,10 @@
     border: none;
     border-radius: 3px;
     padding: 10px;
+
+    @media #{$mobile545}  {
+      width: 300px;
+    }
   }
 
   .fields {

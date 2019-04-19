@@ -130,11 +130,15 @@
 
   .statistic_child {
     @extend %fcc;
+    }
 
-    .pik {
-      @media #{$mobile} {
-        margin: 0 10px;
-      }
+  .pik {
+    @media #{$mobile} {
+      margin: 0 30px;
+    }
+
+    @media #{$mobile320} {
+      margin: 0 ;
     }
   }
 
@@ -285,14 +289,17 @@
     width: 100%;
     padding: 130px 0;
     background: white;
+
+    @media #{$mobile}  {
+      padding: 50px 0;
+    }
   }
 
   .investors_wrapper {
     @extend %fc-s;
-    width: 960px;
-    height: 500px;
     flex-wrap: wrap;
     box-sizing: border-box;
+    padding: 0 35px;
   }
 
   .investors_text {
@@ -302,13 +309,23 @@
     flex-direction: column;
     flex-basis: 35%;
 
+    @media #{$mobile}  {
+      flex-basis: 85%;
+      text-align: center;
+    }
+
     h2 {
       color: #4F545C;
       font-weight: 300;
+
+      @media #{$mobile}  {
+       align-self: center;
+      }
     }
   }
 
   .investors_name {
+    max-width: 700px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -317,6 +334,12 @@
     background-color: white;
     padding-left: 30px;
     box-sizing: border-box;
+
+    @media #{$mobile}  {
+      justify-content: center;
+      flex-basis: auto;
+      padding-left: 0;
+    }
   }
 
   .investors_name_child {
@@ -345,34 +368,40 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-  }
 
-  .joinAccord_text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
+    .joinAccord_text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 65%;
 
-    h2 {
-      color: #4F545C;
-      font: {
-        size: 25px;
-        weight: 300;
+      h2 {
+        color: #4F545C;
+        font: {
+          size: 25px;
+          weight: 300;
+        }
+        line-height: 1.3;
       }
-      line-height: 1.3;
+    }
+
+    .joinAccord_vacancies {
+      margin-top: 50px;
+      text-align: center;
+      background-color: #7289DA;
+      border-radius: 3px;
+      padding: 15px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    img {
+        width: 100%;
     }
   }
 
-  .joinAccord_vacancies {
-    margin-top: 50px;
-    text-align: center;
-    background-color: #7289DA;
-    border-radius: 3px;
-    padding: 15px;
 
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
 }
