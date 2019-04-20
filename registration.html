@@ -13,22 +13,27 @@
           type='text/css'>
 </head>
 <body>
-    <main class="registration_wrapper">
-        <div class="logotype">
+    <main class="registration-wrapper">
+        <div class="logo-block">
             <a href="index.html">
-            <img class="logo" src="img/default.png">
+                <img class="logo-block__img" src="img/default.png">
             </a>
         </div>
         <div class="registration">
-            <form action="#" method="post" class="registration_form">
-                <h2>Создать учётную запись</h2>
-                <div class="fields">
-                    <p>Электронная почта</p> <input type="email" name="email"  id="mail" placeholder="Email">
-                    <p> Имя пользователя</p> <input type="text" name="name" id="name" placeholder="Name">
-                    <p>Пароль</p> <input type="password" name="password"  id="password" placeholder="Password">
-                </div>
-                <div><input type="submit" value="Продолжить" id="continue"></div>
-                <div class="already_registered"> <a href="#">Уже зарегистрированы?</a></div>
+            <form action="#" method="post" class="registration-form">
+                    <h2 class="registration-form__title">Создать учётную запись</h2>
+                    <label class="registration-form__label" for="email">Электронная почта</label>
+                    <input class="registration-form__input" type="email" name="email" id="email" placeholder="Email">
+                    <label class="registration-form__label" for="name"> Имя пользователя</label>
+                    <input class="registration-form__input" type="text" name="name" id="name" placeholder="Name">
+                    <label class="registration-form__label" for="password">Пароль</label> 
+                    <input class="registration-form__input" type="password" name="password" id="password" placeholder="Password">
+                    <input class="registration-form__input_submit " type="submit" value="Продолжить">
+                    <a class="registration-form__link" href="#">Уже зарегистрированы?</a>
+                    <span class="registration-form__terms">Регистрируясь, Вы соглашаетесь с
+                         <a class="registration-form__link span-link" href="#">Правилами пользования</a> и 
+                         <a class="registration-form__link span-link" href="#">Политикой безопасности</a>
+                    </span>
             </form>
         </div>
     </main>
