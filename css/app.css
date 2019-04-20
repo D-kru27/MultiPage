@@ -308,6 +308,7 @@ p {
 .index_wrapper .main__bottom {
   position: relative;
   width: 100%;
+  max-width: 1366px;
   height: 650px;
   background: url("../img/elements/elements.png") no-repeat; }
   .index_wrapper .main__bottom img {
@@ -899,5 +900,3 @@ p {
         .support_wrapper .footer_wrapper__bottom_child a {
           text-decoration: none;
           color: #7B7D80; }
-
-/*# sourceMappingURL=app.css.map */
