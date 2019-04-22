@@ -24,6 +24,10 @@
         color: #7289DA;
         text-decoration: none;
         margin-right: 20px;
+
+        &:hover {
+          color: #88b0da;
+        }
       }
     }
   }
@@ -126,9 +130,9 @@
       height: 1px;
       border: none;
       background-color: #99aab5;
-      opacity: .5;
+      opacity: 0.5;
       width: 50px;
-      margin: -6px auto 20px;
+      margin: 10px auto 15px;
     }
   }
 
@@ -144,30 +148,27 @@
 
     a {
       text-decoration: none;
-    }
 
-    .twitter-btn {
-      text-transform: uppercase;
-      font-weight: 600;
-      padding: 8px 4px 8px 28px;
-      color: white;
-      background-color: #55acee;
-      width: 136px;
-      margin: 0 auto;
-      border-radius: 3px;
-      position: relative;
-    }
 
-    .twitter-btn:before {
-      background: url(/img/twitter-white.png);
-      background-size: 16px;
-      margin-right: 24px;
-      width: 16px;
-      height: 16px;
-      content: "";
-      position: absolute;
-      left: 14px;
-      top: 11px;
+      .twitter-btn {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 0;
+        color: white;
+        background-color: #55acee;
+        width: 136px;
+        margin: 0 auto;
+        border-radius: 3px;
+        position: relative;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+
+        i {
+          margin-right: 5px;
+        }
+      }
     }
   }
 

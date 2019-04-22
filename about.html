@@ -17,14 +17,15 @@
     <div class="square"></div>
     <header class="global-header">
         <div class="nav_panel">
-            <div class="nav_panel__child">
-                <img class="logo" src="img/default.png">
+            <div class="nav_panel__child img">
+                <a class="logo-container__link" title="Home" href="/index.html">
+                    <img class="logo" src="img/default.png">
+                </a>
             </div>
             <ul class="nav_panel__child navigation">
-                <li><a href="#">Загрузить</a></li>
-                <li><a href="#">Вакансии</a></li>
-                <li class="submenu"><a href="#">Разработчикам</a></li>
-                <li class="submenu"><a href="#">Поддержка</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="support.html">Поддержка</a></li>
             </ul>
             <div class="nav_panel__child share">
                 <a class="social social-tw" href="https://twitter.com/discordapp">
@@ -38,6 +39,17 @@
                 </a>
                 <a class="button_open" href="https://discordapp.com/channels/@me">Вход</a>
             </div>
+        </div>
+        <div id="top">
+            <a class="burger" href="#">
+                <span></span>
+            </a>
+            <div class="mobile-menu">
+                <a href="registration.html">Регистрация</a>
+                <a href="about.html">О нас</a>
+                <a href="support.html">Поддержка</a>
+            </div>
+
         </div>
     </header>
     <div class="what_for_section">
@@ -139,28 +151,28 @@
                 </div>
             </div>
         </div>
-        <div class="leave_it_here">
-            <h3>Мы просто оставим это здесь...</h3>
-        </div>
-        <div class="quotes">
-            <div class="quotes_child streamer">
-                <p>«Accord реально жгут во всём — от технологий до команды. Не терпится увидеть, что будет дальше».</p>
-                <div>ВЕДУЩИЙ СТРИМЕР TWITCH</div>
-                <div>LIRIK</div>
-            </div>
-            <div class="quotes_child moderator">
-                <p>«Наше тесное сообщество сложилось благодаря Accord —
-                    это был идеальный инструмент для нашего сплочения».</p>
-                <div>МОДЕРАТОР /R/OVERWATCH</div>
-                <div>WHYTRO</div>
-            </div>
-            <div class="quotes_child mashable">
-                <p>«Accord приобретает всё больший вес. С ним стоит познакомиться,
-                    если вы ищете новые способы связи с сообществами ваших любимых игр».</p>
-                <div>MASHABLE</div>
-                <div>ADAM ROSENBERG</div>
-            </div>
-        </div>
+        <!--        <div class="leave_it_here">-->
+        <!--            <h3>Мы просто оставим это здесь...</h3>-->
+        <!--        </div>-->
+        <!--        <div class="quotes">-->
+        <!--            <div class="quotes_child streamer">-->
+        <!--                <p>«Accord реально жгут во всём — от технологий до команды. Не терпится увидеть, что будет дальше».</p>-->
+        <!--                <div>ВЕДУЩИЙ СТРИМЕР TWITCH</div>-->
+        <!--                <div>LIRIK</div>-->
+        <!--            </div>-->
+        <!--            <div class="quotes_child moderator">-->
+        <!--                <p>«Наше тесное сообщество сложилось благодаря Accord —-->
+        <!--                    это был идеальный инструмент для нашего сплочения».</p>-->
+        <!--                <div>МОДЕРАТОР /R/OVERWATCH</div>-->
+        <!--                <div>WHYTRO</div>-->
+        <!--            </div>-->
+        <!--            <div class="quotes_child mashable">-->
+        <!--                <p>«Accord приобретает всё больший вес. С ним стоит познакомиться,-->
+        <!--                    если вы ищете новые способы связи с сообществами ваших любимых игр».</p>-->
+        <!--                <div>MASHABLE</div>-->
+        <!--                <div>ADAM ROSENBERG</div>-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
 
     <div class="investors">
@@ -238,7 +250,7 @@
                 <a href="#">Документация</a>
             </div>
             <div class="footer_upper_child information"><p>Информация</p>
-                <a class="ghost" href="#">Помощь и поддержка</a>
+                <a href="support.html">Помощь и поддержка</a>
                 <a href="#">Правила</a>
                 <a href="#">Обратная связь</a>
                 <a href="#">Условия использования</a>
@@ -246,7 +258,7 @@
                 <a href="#">Состояние</a>
             </div>
             <div class="footer_upper_child company"><p>Компания</p>
-                <a class="ghost" href="about.html">О нас</a>
+                <a href="about.html">О нас</a>
                 <a href="#">Блог</a>
                 <a href="#">Вакансии</a>
             </div>
@@ -263,14 +275,14 @@
                 <h2 class="readyToJoin">Готовы попробовать Accord? Это бесплатно!</h2>
                 <h3 class="joinOtherPlayers">УЖЕ БОЛЕЕ 250 МЛН ИГРОКОВ! ПРИСОЕДИНЯЙТЕСЬ!</h3>
             </div>
-            <a class="button_registration ghost" href="//discordapp.com/register">Зарегистрироваться</a>
+            <a class="button_registration ghost" href="registration.html">Зарегистрироваться</a>
         </div>
     </footer>
 </main>
 <script
-  src="https://code.jquery.com/jquery-3.4.0.slim.js"
-  integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ="
-  crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.4.0.slim.js"
+        integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ="
+        crossorigin="anonymous"></script>
 <script src="../js/script.js"></script>
 </body>
 </html>
